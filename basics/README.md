@@ -1,4 +1,4 @@
-# 01 - Python Logic Workspace
+###Python Logic Workspace
 
 ### Overview
 This folder houses foundational Python exercises focused on building strong problem-solving logic from first principles.
