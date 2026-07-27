@@ -3,5 +3,5 @@ My daily workspace for algorithmic problem solving, pattern recognition, and tim
 ---
 
 ## 📌 Progress Tracker
-- [x] **patterns.py** - Nested loops, spatial coordination, matrix boundary conditions
-- [x] **functions.py** - Modular design, type hints, branching logic, and iterative Fibonacci
+- [x] **patterns.py** - Nested loops, spatial coordination, matrix boundary conditions.
+- [x] **functions.py** - Modular design, type hints, branching logic, and iterative Fibonacci.
