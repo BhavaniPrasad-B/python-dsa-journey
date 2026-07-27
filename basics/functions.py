@@ -3,7 +3,7 @@
 🎯 GOAL: Master functions, conditional logic, mathematical formulas, and iterative transformations.
 
 Complexity Overview:
-- Time Complexity: O(1) for direct math formulas; O(log10 N) for digit reduction
+- Time Complexity: O(1) for direct math formulas; O(N) for sequence generation; O(log10 N) for digit reduction
 - Space Complexity: O(1) across all functions
 """
 
@@ -161,6 +161,28 @@ def digital_root(n: int) -> int:
 
 
 # ==============================================================================
+# 11. Iterative N-th Fibonacci Number
+# ==============================================================================
+def fibonacci_number(n: int) -> int:
+    """
+    Returns the N-th Fibonacci number using iterative state updating.
+    Base cases: F(0) = 0, F(1) = 1.
+
+    Time Complexity:  O(N)
+    Space Complexity: O(1)
+    """
+    if n <= 0:
+        return 0
+    if n == 1:
+        return 1
+
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
+
+
+# ==============================================================================
 # DRIVER EXECUTION / TESTING
 # ==============================================================================
 if __name__ == "__main__":
@@ -178,3 +200,4 @@ if __name__ == "__main__":
     print("Electricity Bill for 250 units: ₹", calculate_electricity_bill(250))  # 600.0
     print("Is valid triangle (3, 4, 5)?:", is_valid_triangle(3, 4, 5))  # True
     print("Digital root of 98:", digital_root(98))  # 8
+    print("7th Fibonacci Number:", fibonacci_number(7))  # 13
