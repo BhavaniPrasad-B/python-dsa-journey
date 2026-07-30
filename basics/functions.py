@@ -55,6 +55,8 @@ def lift_rounds(n: int, capacity: int) -> int:
     Calculates minimum lift trips required to carry N people.
     Formula (n + capacity - 1) // capacity handles ceiling division without floating-point math.
 
+    this is written to check the tiny commit change visibility.
+
     Time Complexity:  O(1)
     Space Complexity: O(1)
     """
