@@ -67,6 +67,7 @@ def is_perfect_square(num):
     return False
 
 
+
 # ==============================================================================
 # 5. Decimal to Binary (No Built-ins)
 # ==============================================================================
@@ -91,6 +92,7 @@ def decimal_to_binary(n):
         binary = "-" + binary
 
     return binary
+
 
 
 # 6. Binary to Decimal (No Built-ins)
