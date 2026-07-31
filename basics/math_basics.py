@@ -93,6 +93,19 @@ def decimal_to_binary(n):
     return binary
 
 
+# 6. Binary to Decimal (No Built-ins)
+# ==============================================================================
+def binary_to_decimal(binary_str):
+    decimal = 0
+    power = 0
+
+    for i in range(len(binary_str) - 1, -1, -1):
+        if binary_str[i] == "1":
+            decimal += 2 ** power
+        power += 1
+
+    return decimal
+
 # ==============================================================================
 # DRIVER EXECUTION / TESTING
 # ==============================================================================
@@ -115,3 +128,7 @@ if __name__ == "__main__":
     print("\n--- 5. Decimal to Binary ---")
     print("5 in binary:", decimal_to_binary(5))
     print("-5 in binary:", decimal_to_binary(-5))
+
+    print("\n--- 6. Binary to Decimal ---")
+    print("'101' in decimal:", binary_to_decimal("101"))
+    print("'1101' in decimal:", binary_to_decimal("1101"))
