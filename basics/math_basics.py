@@ -66,6 +66,33 @@ def is_perfect_square(num):
         i += 1
     return False
 
+
+# ==============================================================================
+# 5. Decimal to Binary (No Built-ins)
+# ==============================================================================
+
+def decimal_to_binary(n):
+    if n == 0:
+        return "0"
+
+    is_negative = False
+    if n < 0:
+        is_negative = True
+        n = -n
+
+    binary = ""
+
+    while n > 0:
+        remainder = n % 2
+        binary = str(remainder) + binary
+        n //= 2
+
+    if is_negative:
+        binary = "-" + binary
+
+    return binary
+
+
 # ==============================================================================
 # DRIVER EXECUTION / TESTING
 # ==============================================================================
@@ -84,3 +111,7 @@ if __name__ == "__main__":
     print("\n--- 4. Perfect Square Check ---")
     print("Is 16 a perfect square?:", is_perfect_square(16))
     print("Is 14 a perfect square?:", is_perfect_square(14))
+
+    print("\n--- 5. Decimal to Binary ---")
+    print("5 in binary:", decimal_to_binary(5))
+    print("-5 in binary:", decimal_to_binary(-5))
