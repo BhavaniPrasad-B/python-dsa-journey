@@ -108,6 +108,23 @@ def binary_to_decimal(binary_str):
 
     return decimal
 
+
+# ==============================================================================
+# 7. GCD of Two Numbers (Euclidean Algorithm - Iterative)
+# ==============================================================================
+def gcd(n, m):
+    """
+    Calculates the Greatest Common Divisor (GCD) using the Euclidean algorithm.
+
+    Time Complexity:  O(log(min(n, m)))
+    Space Complexity: O(1)
+    """
+    while m != 0:
+        n, m = m, n % m
+    return n
+
+
+
 # ==============================================================================
 # DRIVER EXECUTION / TESTING
 # ==============================================================================
@@ -134,3 +151,8 @@ if __name__ == "__main__":
     print("\n--- 6. Binary to Decimal ---")
     print("'101' in decimal:", binary_to_decimal("101"))
     print("'1101' in decimal:", binary_to_decimal("1101"))
+
+    print("\n--- 7. Greatest Common Divisor (GCD) ---")
+    print("GCD of 48 and 18:", gcd(48, 18))
+    print("GCD of 56 and 98:", gcd(56, 98))
+
