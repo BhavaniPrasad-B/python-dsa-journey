@@ -152,7 +152,7 @@ if __name__ == "__main__":
     print("'101' in decimal:", binary_to_decimal("101"))
     print("'1101' in decimal:", binary_to_decimal("1101"))
 
-    print("\n--- 7. Greatest Common Divisor (GCD) ---")
+    print("\n--- 7. Greatest Common Divisor (GCD) --")
     print("GCD of 48 and 18:", gcd(48, 18))
     print("GCD of 56 and 98:", gcd(56, 98))
 
