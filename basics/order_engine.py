@@ -29,6 +29,7 @@ inventory = {
 restricted_skus = {"P999", "P888"}
 
 
+
 def clean_sku(raw_item):
     """Normalize input string to uppercase without surrounding spaces."""
     return raw_item.strip().upper()
