@@ -89,7 +89,7 @@ def decimal_to_binary(n):
     return binary
 
 
-
+# ==============================================================================
 # 6. Binary to Decimal (No Built-ins)
 # ==============================================================================
 def binary_to_decimal(binary_str):
