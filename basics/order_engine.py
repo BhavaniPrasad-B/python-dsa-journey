@@ -104,7 +104,6 @@ if __name__ == "__main__":
     print("Initial Inventory State:", inventory)
 
     # Test cart with extra spaces, duplicate items, and invalid SKUs
-    
     bhavani_cart = [" p101 ", "P102", "p102", "P102", "P102", "P999"]
 
     order_summary = process_cart("  bhavani prasad  ", bhavani_cart)
