@@ -200,7 +200,7 @@ if __name__ == "__main__":
     print("Max of (10, 25, 15):", max_of_three(10, 25, 15))  # 25.0
     print("Is 2024 a Leap Year?:", is_leap_year(2024))  # True
     print("Is 1900 a Leap Year?:", is_leap_year(1900))  # False
-    print("Electricity Bill for 250 units: ₹", calculate_electricity_bill(250))  # 600.0
+    print("Electricity Bill for 250 units: ₹ ", calculate_electricity_bill(250))  # 600.0
     print("Is valid triangle (3, 4, 5)?:", is_valid_triangle(3, 4, 5))  # True
     print("Digital root of 98:", digital_root(98))  # 8
     print("7th Fibonacci Number:", fibonacci_number(7))  # 13
