@@ -5,7 +5,7 @@
 
 Complexity Overview:
 - Time Complexity: O(1) across parity and direct formula checks; O(N) for iterative series
-- Space Complexity: O(1) constant memory usage
+- Space Complexity: O(1) constant memory usage.
 """
 
 
