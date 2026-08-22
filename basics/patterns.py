@@ -14,7 +14,23 @@ Complexity Overview:
 # 🧠 Key Concept: Matrix Coordinate Evaluation
 # Instead of printing blindly, we treat the grid as an (i, j) coordinate plane.
 # We check if the current cell touches any of the 4 outer walls.
+def print_hollow_square(n: int) -> None:
+    """
+    Prints a hollow square of side length N.
 
+    Time Complexity:  O(N²) - Checks N x N coordinates
+    Space Complexity: O(1) - Dynamic stream output
+    """
+    print(f"--- Hollow Square (N = {n}) ---")
+    for i in range(n):
+        for j in range(n):
+            # Boundary Condition Check: Top, Bottom, Left, or Right wall
+            if i == 0 or i == n - 1 or j == 0 or j == n - 1:
+                print("*", end="")
+            else:
+                print(" ", end="")
+        print()  # Line break engine
+    print()
 
 
 
