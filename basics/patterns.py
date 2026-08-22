@@ -14,6 +14,7 @@ Complexity Overview:
 # 🧠 Key Concept: Matrix Coordinate Evaluation
 # Instead of printing blindly, we treat the grid as an (i, j) coordinate plane.
 # We check if the current cell touches any of the 4 outer walls.
+
 def print_hollow_square(n: int) -> None:
     """
     Prints a hollow square of side length N.
